@@ -1,10 +1,8 @@
 import React from "react";
 
-function Task({ task, onDeleteTask }) {
-  const { text, category } = task;
-
+function Task({ text, category, onDeleteTask }) {
   function handleClick() {
-    onDeleteTask(task);
+    onDeleteTask(text);
   }
 
   return (
